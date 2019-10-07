@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Frm21Activity">
+
+    <TextView
+        android:id="@+id/an411"
+        android:layout_width="343dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="cursive"
+        android:text="@string/and41"
+        android:textColor="#034605"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="355dp"
+        android:layout_height="563dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/an411"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imagenand41"
+                android:layout_width="match_parent"
+                android:layout_height="158dp"
+                android:contentDescription="@string/android4111"
+                app:srcCompat="@drawable/android412" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="2092dp"
+                android:text="@string/android411"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/pantallazo"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:contentDescription="@string/android4_1p"
+                app:srcCompat="@drawable/interfaz41" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/back"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="150dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_toStartOf="@+id/east41"
+                    android:background="@drawable/regresar"
+                    android:onClick="back" />
+
+                <Button
+                    android:id="@+id/east41"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="37dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="@drawable/eastereggefect"
+                    android:onClick="east41" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

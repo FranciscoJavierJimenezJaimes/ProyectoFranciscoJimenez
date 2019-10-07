@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Frm18Activity">
+
+    <TextView
+        android:id="@+id/android4_0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="cursive"
+        android:text="@string/Android4_0"
+        android:textColor="#033A20"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="365dp"
+        android:layout_height="502dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.387"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/android4_0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageandroid4"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:contentDescription="@string/Android4_0"
+                app:srcCompat="@drawable/android4" />
+
+            <TextView
+                android:id="@+id/android4_0_4_0_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/android4"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/samsungnexxus"
+                android:layout_width="match_parent"
+                android:layout_height="198dp"
+                android:background="@drawable/nexussamsung"
+                android:onClick="samsung" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/back"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="171dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_toStartOf="@+id/easteregg4"
+                    android:background="@drawable/regresar"
+                    android:onClick="back" />
+
+                <Button
+                    android:id="@+id/easteregg4"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="34dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="@drawable/eastereggefect"
+                    android:onClick="east4" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

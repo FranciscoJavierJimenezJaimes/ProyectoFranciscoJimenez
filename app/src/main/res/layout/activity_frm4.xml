@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Frm4Activity">
+
+    <TextView
+        android:id="@+id/Android1011"
+        android:layout_width="333dp"
+        android:layout_height="32dp"
+        android:fontFamily="cursive"
+        android:text="@string/A1"
+        android:textColor="#084201"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="359dp"
+        android:layout_height="590dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Android1011"
+        app:layout_constraintVertical_bias="0.039">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/android1pies"
+                android:layout_width="341dp"
+                android:layout_height="143dp"
+                android:contentDescription="@string/androidpie1"
+                app:srcCompat="@drawable/applepie2" />
+
+            <TextView
+                android:id="@+id/Android1110"
+                android:layout_width="361dp"
+                android:layout_height="2814dp"
+                android:text="@string/A1Histori"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/bananabreadinfo"
+                android:layout_width="match_parent"
+                android:layout_height="112dp"
+                android:contentDescription="@string/bananabread"
+                app:srcCompat="@drawable/bananabreasd2" />
+
+            <TextView
+                android:id="@+id/inforbananabread"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/bananabreadhi"
+                android:textSize="30sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="77dp">
+
+                <Button
+                    android:id="@+id/back"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="138dp"
+                    android:layout_marginBottom="17dp"
+                    android:layout_toStartOf="@+id/caracteristicasmarket"
+                    android:background="@drawable/regresar"
+                    android:onClick="back" />
+
+                <Button
+                    android:id="@+id/caracteristicasmarket"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="33dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/marketefecto"
+                    android:onClick="mercadovista" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

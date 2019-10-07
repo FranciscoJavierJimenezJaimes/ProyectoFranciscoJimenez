@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Frm10Activity">
+
+    <TextView
+        android:id="@+id/nexus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="cursive"
+        android:text="@string/nexusonehistoria"
+        android:textColor="#FC0A4432"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="313dp"
+        android:layout_height="502dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nexus"
+        app:layout_constraintVertical_bias="0.086">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/nexusone"
+                android:layout_width="match_parent"
+                android:layout_height="149dp"
+                android:contentDescription="@string/nexusone"
+                app:srcCompat="@drawable/nexusone" />
+
+            <TextView
+                android:id="@+id/nexusonecaract"
+                android:layout_width="match_parent"
+                android:layout_height="1761dp"
+                android:text="@string/nexusonetxt"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/nexusonetras"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:contentDescription="@string/nexustras"
+                app:srcCompat="@drawable/nexustras" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/back"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/regresar"
+                    android:onClick="back" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

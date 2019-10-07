@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Frm6Activity">
+
+    <TextView
+        android:id="@+id/android1_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="cursive"
+        android:text="@string/android1_5"
+        android:textColor="#04631D"
+        android:textSize="66sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="352dp"
+        android:layout_height="526dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/android1_5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imagenandroid1_5"
+                android:layout_width="match_parent"
+                android:layout_height="114dp"
+                android:contentDescription="@string/androidimagen1_5"
+                app:srcCompat="@drawable/cupcake2" />
+
+            <TextView
+                android:id="@+id/android1_5hi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/android1_5hi"
+                android:textSize="25sp" />
+
+            <ImageView
+                android:id="@+id/interfaz1_51_1"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:contentDescription="@string/interfaz1_51_1"
+                app:srcCompat="@drawable/iterfaz1_51_1" />
+
+            <TextView
+                android:id="@+id/interfaz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/interfaz"
+                android:textSize="25sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/back"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/regresar"
+                    android:onClick="back" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

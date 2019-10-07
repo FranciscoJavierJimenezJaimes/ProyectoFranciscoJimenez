@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Frm19Activity">
+
+    <TextView
+        android:id="@+id/samsungnn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:fontFamily="cursive"
+        android:text="@string/samsungnnn"
+        android:textColor="#FD022E0C"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="358dp"
+        android:layout_height="474dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/samsungnn"
+        app:layout_constraintVertical_bias="0.104">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/sa"
+                android:layout_width="match_parent"
+                android:layout_height="139dp"
+                android:contentDescription="@string/samsungnnn"
+                app:srcCompat="@drawable/samsungnexus" />
+
+            <TextView
+                android:id="@+id/informacionnexus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/infsgn"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/camara"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/camara"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/sgnt"
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:contentDescription="@string/sgn"
+                app:srcCompat="@drawable/sgnt" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/back"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/regresar"
+                    android:onClick="back" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

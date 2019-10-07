@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Frm13Activity">
+
+    <TextView
+        android:id="@+id/nexusamsungsgoogle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="cursive"
+        android:text="@string/caracteristicasnexuss"
+        android:textSize="49sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="319dp"
+        android:layout_height="425dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nexusamsungsgoogle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imagennexuss"
+                android:layout_width="341dp"
+                android:layout_height="143dp"
+                android:contentDescription="@string/nexusdesamsung"
+                app:srcCompat="@drawable/nexuss" />
+
+            <TextView
+                android:id="@+id/infonexuss"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nexusex"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/frontnex"
+                android:layout_width="match_parent"
+                android:layout_height="171dp"
+                android:contentDescription="@string/nexufr"
+                app:srcCompat="@drawable/nexus" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/back"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/regresar"
+                    android:onClick="back" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

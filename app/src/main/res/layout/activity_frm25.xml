@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Frm25Activity">
+
+    <TextView
+        android:id="@+id/android5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="cursive"
+        android:text="@string/android50"
+        android:textColor="#011A05"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="349dp"
+        android:layout_height="513dp"
+        android:layout_marginBottom="44dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/android5"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/andy"
+                android:layout_width="match_parent"
+                android:layout_height="143dp"
+                android:contentDescription="@string/android500"
+                app:srcCompat="@drawable/android52" />
+
+            <TextView
+                android:id="@+id/infoandy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/android5info"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/interandy"
+                android:layout_width="match_parent"
+                android:layout_height="195dp"
+                android:contentDescription="@string/inandy"
+                app:srcCompat="@drawable/android5in" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/back"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="164dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_toStartOf="@+id/east5"
+                    android:background="@drawable/regresar"
+                    android:onClick="back" />
+
+                <Button
+                    android:id="@+id/east5"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="21dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="@drawable/eastereggefect"
+                    android:onClick="east5" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

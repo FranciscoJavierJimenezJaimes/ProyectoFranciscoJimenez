@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#081414"
+    tools:context=".Frm2Activity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="cursive"
+        android:text="@string/Titulo2"
+        android:textColor="#038139"
+        android:textSize="56sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="488dp"
+        android:layout_height="517dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/buttonHistoria"
+                android:layout_width="346dp"
+                android:layout_height="88dp"
+                android:layout_margin="28dp"
+                android:background="@drawable/efecto_btnh"
+                android:onClick="Historia" />
+
+            <Button
+                android:id="@+id/buttonandroid1.0"
+                android:layout_width="346dp"
+                android:layout_height="210dp"
+                android:layout_margin="28dp"
+                android:background="@drawable/efecto_btna1"
+                android:onClick="Android1" />
+
+            <Button
+                android:id="@+id/buttonandroid1.5"
+                android:layout_width="346dp"
+                android:layout_height="210dp"
+                android:layout_margin="28dp"
+                android:background="@drawable/btnefecto_andcup"
+                android:onClick="Android1_5" />
+
+            <Button
+                android:id="@+id/buttonandroid1.6"
+                android:layout_width="346dp"
+                android:layout_height="210dp"
+                android:layout_margin="28dp"
+                android:background="@drawable/efectodonut"
+                android:onClick="Android1_6" />
+
+            <Button
+                android:id="@+id/buttonandroid2.0"
+                android:layout_width="346dp"
+                android:layout_height="210dp"
+                android:layout_margin="28dp"
+                android:background="@drawable/efectoandroid2_0"
+                android:onClick="Android2_0" />
+
+            <Button
+                android:id="@+id/buttonandroid2.2"
+                android:layout_width="346dp"
+                android:layout_height="210dp"
+                android:layout_margin="28dp"
+                android:background="@drawable/froyoefect"
+                android:onClick="Android2_2" />
+
+            <Button
+                android:id="@+id/buttonandroid2.3"
+                android:layout_width="346dp"
+                android:layout_height="210dp"
+                android:layout_margin="28dp"
+                android:background="@drawable/android2_3efecto"
+                android:onClick="Android2_3" />
+
+            <Button
+                android:id="@+id/buttonandroid3.0"
+                android:layout_width="346dp"
+                android:layout_height="210dp"
+                android:layout_margin="28dp"
+                android:background="@drawable/honeyefect"
+                android:onClick="Android3" />
+
+            <Button
+                android:id="@+id/buttonandroid4.0"
+                android:layout_width="346dp"
+                android:layout_height="210dp"
+                android:layout_margin="28dp"
+                android:background="@drawable/efectoandroid4"
+                android:onClick="Android4" />
+
+            <Button
+                android:id="@+id/buttonandroid4.1"
+                android:layout_width="346dp"
+                android:layout_height="210dp"
+                android:layout_margin="28dp"
+                android:background="@drawable/efectoand41"
+                android:onClick="Android41" />
+
+            <Button
+                android:id="@+id/buttonandroid4.4"
+                android:layout_width="346dp"
+                android:layout_height="210dp"
+                android:layout_margin="28dp"
+                android:background="@drawable/kitkatefect"
+                android:onClick="Android44" />
+
+            <Button
+                android:id="@+id/buttonandroid5.0"
+                android:layout_width="346dp"
+                android:layout_height="210dp"
+                android:layout_margin="28dp"
+                android:background="@drawable/android5efec"
+                android:onClick="Android5" />
+
+            <Button
+                android:id="@+id/buttonandroid6.0"
+                android:layout_width="346dp"
+                android:layout_height="210dp"
+                android:layout_margin="28dp"
+                android:background="@drawable/efectoandroid6"
+                android:onClick="Android6" />
+
+            <Button
+                android:id="@+id/buttonandroid7.0"
+                android:layout_width="346dp"
+                android:layout_height="210dp"
+                android:layout_margin="28dp"
+                android:background="@drawable/efectoandroid7"
+                android:onClick="Android7" />
+
+            <Button
+                android:id="@+id/buttonandroid8.0"
+                android:layout_width="346dp"
+                android:layout_height="210dp"
+                android:layout_margin="28dp"
+                android:background="@drawable/android8efect"
+                android:onClick="Android8" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
